@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <title>Formulaire</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form method="post">
+        <fieldset id="form1">
+            <legend id="votreid">Votre identité</legend>
+            <label for="nom">1. Nom :</label>
+            <input placeholder="Nom" type="text" name="nom" id="nom">
+        <br />
+            <label for="prenom">2. Prénom :</label>
+            <input placeholder="Prénom" type="text" name="prenom" id="prenom">
+        <br />
+            <label for="mail">3. Adresse mail :</label>
+            <input type="email" placeholder="Adresse mail" name="mail" id="mail">
+        </fieldset>
+        <fieldset id="form2">
+            <legend id="votreadrs">Adresse de livraison</legend>
+            <label for="Adr">1. Adresse :</label>
+            <textarea name="adresse" id="Adr"></textarea>
+        <br />
+            <label for="code">2. Code postal :</label>
+            <input placeholder="Code postal" type="text" name="code" id="code">
+        <br />
+            <label for="ville">3. Ville :</label>
+            <input placeholder="Ville" type="text" name="ville" id="ville">
+        </fieldset>
+        <fieldset id="form3">
+            <legend id="vosinfos">Information de réglement</legend>
+            <label for="Card">1. Type de carte bancaire :</label>
+        <br />
+            <input type="radio" name="card" value="visa" id="visa" />
+            <label for="visa">Visa</label>
+            <br />
+            <input type="radio" name="card" value="master" id="master" />
+            <label for="master">Mastercard</label>
+        <br />
+            <label for="ncard">2. Numéro de carte :</label>
+            <input placeholder="Numéro de carte" type="text" name="ncard" id="ncard">
+        <br />
+            <label for="secur">3. Code de sécurité :</label>
+            <input placeholder="code de sécurité" type="text" name="secur" id="secur">
+        <br />
+            <label for="idt">4. Nom du titulaire :</label>
+            <input placeholder="nom du titulaire" type="text" name="idt" id="idt">
+        </fieldset>
+        <input type="submit" value="J'achète !">
+    </form>
+</body>
+
+</html>
